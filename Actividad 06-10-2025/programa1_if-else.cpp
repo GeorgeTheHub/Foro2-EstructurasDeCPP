@@ -8,12 +8,12 @@ int main() {
     int opcion;
     do {
 
-        cout << "\tMenu de productos disponibles" << endl;
+        cout << "** Menu de productos disponibles **" << endl;
         cout << "1.- Torta" << endl;
         cout << "2.- Palomitas" << endl;
         cout << "3.- Agua" << endl;
         cout << "4.- Salir y terminar operacion" << endl;
-        cout << "Opcion: ";
+        cout << "A continuacion, escriba la accion que desee realizar: ";
         cin >> opcion;
 
         if (opcion == 1) {
@@ -27,7 +27,7 @@ int main() {
 
         else if (opcion == 3)
         {
-        cout << "Precio de botella de agua: $25.00 MXN" << endl;
+        cout << "Precio de botella de agua: $20.00 MXN" << endl;
         }
 
         else if (opcion == 4)
@@ -39,6 +39,8 @@ int main() {
         {
         cout << "Opcion invalida, por favor intente de nuevo." << endl;
         }
-    }
+        cout << "\n" << endl;
+        
+    } while (opcion != 4);
 
 }
